@@ -4,7 +4,7 @@
   "description": "Helps in managing daily tasks",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon  server",
+    "start": "node  server",
     "compile": "webpack",
     "hmr": "webpack-dev-server --hot -inline"
   },
