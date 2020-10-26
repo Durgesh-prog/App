@@ -9,6 +9,9 @@ const flash = require('connect-flash');
 const session = require('express-session');
 
 
+const PORT = process.env.PORT || 9000
+
+
 //Routes
 const AuthenticationRoute = require('./routes/index');
 const UserRoute = require('./routes/User');
@@ -66,6 +69,6 @@ app.get('*',(req,res) => {
 })
 
 /* Listening to Requests */
-app.listen(Constants.PORT,() => {
+app.listen(PORT,() => {
 	console.log(`Welcome To ToDo APP`);
 })
